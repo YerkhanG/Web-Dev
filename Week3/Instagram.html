@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram</title>
+    <style>
+        body {
+            background:rgb(243, 243, 242);
+        }
+        #photo1{
+            position: absolute;
+            top: 50px;
+            left: 500px;
+            padding:0.1em;
+            z-index:2;
+        }
+        #photo2{
+            position:absolute;
+            z-index:1;
+            top:30px;
+            left:400px;
+        }
+        #main {
+            color: black;
+            font-family: cursive;
+            text-align: center;
+        }
+        .s1{
+            border:30px;
+            background-color:black;
+            color:white;
+        }
+        .s2{
+            border:30px;
+        }
+
+        #block1{
+            position:absolute;
+            top:50px;
+            left:800px;
+            background-color: white;
+            padding:30px;
+            padding-top:0px;
+            text-align: center;
+        }
+        #block2{
+            position:absolute;
+            left:900px;
+            top: 500px;
+        }
+        #footer{
+            font-family:'Courier New', Courier, monospace;
+            position:absolute;
+            bottom:0;
+            width:100%;
+            color:rgba(0, 0, 0, 0.492);
+            text-align: center;
+        }
+        #google-play{
+            position:absolute;
+            left:850px;
+            top:530px;
+            width:120px;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        #microsoft{
+            position:absolute;
+            left:1050px;
+            top:530px;
+            width:120px;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        #login-button {
+            color:white;
+            background-color:rgb(0, 119, 255);
+            font-size:1.2em;
+            width:90%;
+            border-radius: 6px;
+        }
+        #accbutton{
+            background-color: green;
+            color:white;
+            font-size:1.3em;
+            width:90%;
+            border-radius: 6px;
+        }
+        .input{
+            font-size:1.6em;
+            width:90%;
+            border-radius: 3px;
+        }
+        #facebook{
+            color:blue;
+        }
+        #under1{
+            border:1px black ridge;
+        }
+        #reg{
+            color:rgb(45, 40, 202);
+        }
+    </style>
+</head>
+<body>
+<div id = "photo1">
+    <img src = "https://cdn.pixabay.com/photo/2013/07/13/12/46/iphone-160307__480.png">
+</div>
+<div id = "photo2">
+    <img src = "https://cdn.pixabay.com/photo/2013/07/13/12/46/iphone-160307__480.png">
+</div>
+<div id = "block1">
+    <h1 id = "main">Instagram</h1>
+    <p><input type = "email" class = "input" placeholder = "Электронный адрес"></p>
+    <p><input type="password" class = "input" placeholder="Пароль"></p>
+    <p><button type="button" id = "login-button">Войти</button></p>
+    <p><h4>Или</h4></p>
+    <p><h4 id = "facebook">Войти через Facebook</h4></p>
+    <p><h6>Забыли пароль?</h6></p>
+    <div id = "under1">
+        <p>У вас еще нет аккаунта?<span id = "reg">Зарегистрироваться</span></p>
+    </div>
+</div>
+
+<div id = "block2">
+    <p>Установите приложение.</p>
+</div>
+    <p id = "google-play">ДОСТУПНО В<br>Google Play</p>
+    <p id = "microsoft">Скачать у<br>Microsoft</p>
+<div id = "footer">
+    <h6>Meta
+        Информация
+        Блог
+        Вакансии
+        Помощь
+        API
+        Конфиденциальность
+        Условия
+        Популярные аккаунты
+        Места
+        Instagram Lite
+        Загрузка контактов и лица, не являющиеся пользователями<br>
+        Русский
+        
+        Русский
+        © 2023 Instagram from Meta</h6>
+</div>
+</body>
+</html>
