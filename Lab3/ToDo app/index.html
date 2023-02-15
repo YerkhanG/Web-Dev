@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <style>
+        body{
+            background-color: rgb(31, 30, 30);
+            color: white;
+            text-align: center;
+        }
+        .tasks{
+            text-align: center;
+        }
+        .delete{
+            height:20px;
+            color:white;
+        }
+        #task{
+            background-color: aliceblue;
+            color:black;
+            border:gray solid;
+        }
+    </style>
+</head>
+<body>
+<h1>ToDo List</h1>
+    
+<div id="newtask">
+    <input type="text" id = "main" placeholder="Add Tasks">
+    <button class = "add" onclick="addItem()">Add</button>
+</div>
+<h2>Added tasks:</h2>
+<div class="tasks">
+    <ul id = "task">
+    </ul>
+</div>
+    
+</body>
+<script src = "jvs.js"></script>
+</html>
