@@ -1,0 +1,38 @@
+<h2>Products</h2>
+<button type = "button" (click) = "category = 'Laptop'">Laptops</button>
+<button type = "button" (click) = "category = 'Phone'">Phones</button>
+<button type = "button" (click) = "category = 'Vacuum'">Vacuums</button>
+<button type = "button" (click) = "category = 'Headphones'">Headphones</button>
+
+<div *ngFor = "let product of products;let indexOfelement=index;">
+  <div  *ngIf = 'product.category == category'>
+    <h3>
+      <a [title] = "product.name + ' details'" [routerLink]="['/products', product.id]">{{product.name}}</a>
+    </h3>
+    <p *ngIf = "product.image">
+      <img src = "{{product.image}}" height = "350">
+    </p>
+    <p *ngIf = "product.description">
+      Description : {{product.description}}
+    </p>
+    <p *ngIf = "product.rating">
+      Rating : {{product.rating}}
+    </p>
+    <p>
+      <a href="https://t.me/share/url?url={{product.link}}&text={caption_text}&to={phone_number}">
+        Share
+      </a>
+      <button type = "button" (click) = "Like(indexOfelement)">Like {{product.likes}}</button>
+    <app-product-alerts [product]="product" (notify)="onNotify()"> </app-product-alerts>
+    <p *ngIf = "product.link">
+      <a href = "{{product.link}}">Link</a>
+      <button type = "button" (click) = "Delete(indexOfelement)">Delete</button>
+    </p>
+  </div>
+</div>
+
+<!--
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
