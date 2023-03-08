@@ -7,6 +7,8 @@ let createNewTask = function(taskString) {
     let box = document.createElement("input");
     box.className = "c-boxes";
     box.type = "checkbox";
+    box.onclick = stroked_element;
+    
     
     let deleteButton = document.createElement("img");
     deleteButton.src = "https://cdn-icons-png.flaticon.com/512/860/860829.png";
@@ -36,6 +38,7 @@ let deleteItem = function() {
 }
 
 
+
 let addItem = function() {
     
     let tasks = document.getElementById("task");
@@ -49,3 +52,11 @@ let addItem = function() {
     task.value = "";
 }
 
+function stroked_element(){
+    let element = event.currentTarget.parentElement;
+    if(element.classList.contains('stroked')){
+        element.classList.remove('stroked');
+    }else{
+        element.classList.add('stroked');
+    }
+}

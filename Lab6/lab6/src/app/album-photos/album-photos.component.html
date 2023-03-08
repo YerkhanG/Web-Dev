@@ -1,0 +1,11 @@
+<div>
+  <button type ="button" (click) = "back()">Back</button>
+</div>
+<div>
+  <p>Photos Page</p>
+  <h2>{{album.title}}</h2>
+  <div *ngFor="let photo of photos">
+    <img src = "{{photo.url}}">
+    <h2>{{photo.title}}</h2>
+  </div>
+</div>
