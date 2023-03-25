@@ -11,6 +11,7 @@ import { AlbumPhotosComponent } from './album-photos/album-photos.component';
 import {FormsModule} from "@angular/forms";
 import {HttpClientModule} from "@angular/common/http";
 import {AlbumService} from "./album.service";
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {AlbumService} from "./album.service";
     AboutComponent,
     AlbumsComponent,
     AlbumDetailComponent,
-    AlbumPhotosComponent
+    AlbumPhotosComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
