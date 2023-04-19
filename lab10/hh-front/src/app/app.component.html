@@ -1,0 +1,10 @@
+<h1>Companies</h1>
+<ul>
+  <li *ngFor = "let company of companies">
+    {{company.id}} - {{company.name}}
+    <button type = "button" (click) = "getVacancies(company.id)">Show</button>
+  </li>
+</ul>
+<h1>Vacancies</h1>
+<p *ngFor="let vacancy of vacancies">{{vacancy.id}}--{{vacancy.name}}</p>
+
